@@ -13,7 +13,6 @@ btn.addEventListener("click", async () => {
 
 function filterByState(colleges, state) {
     return colleges.filter(college => {
-        // Some colleges have state info in name or state-province field
         return (college.name.toLowerCase().includes(state) || 
                 (college["state-province"] && 
                  college["state-province"].toLowerCase().includes(state)));
